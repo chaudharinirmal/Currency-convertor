@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>currency converter</title>
+    </head>
+    <script>
+    
+    function abc()
+        {
+    var x= parseInt(document.getElementById("id1").value);  
+  // var y=parseInt(document.getElementById("id2").value); 
+      var z=document.getElementById("s1").value;
+        if(z=="p")    
+            {
+                document.getElementById("p1").innerHTML=x*71.249;
+            }
+            if(z=="e")    
+            {
+                document.getElementById("p1").innerHTML=x*79.03;
+            }
+            if(z=="c")    
+            {
+                document.getElementById("p1").innerHTML=x*54.44;
+            }
+            if(z=="j")    
+            {
+                document.getElementById("p1").innerHTML=x*0.675;
+            }
+                    if(z=="ch")    
+            {
+                document.getElementById("p1").innerHTML=x*10.08;
+            }
+        }
+    
+    </script>
+    
+    <body  style="background-image:url(img/Current%20up.png)">
+        <center>
+            
+         <img style="height:100;width:100" title="This is my logo" src="Current back.png">
+        <br><br>
+    <label>Enter your value to convert</label><br>
+    <input id="id1" type="text"><br><br>
+     <label>select currency to convert</label><br>
+    
+     <select id="s1" onclick="abc()">
+         <option>select</option>
+             <option value="p">USD</option>
+             <option value="e">Euro</option>
+             <option value="c">Candain</option>
+             <option value="j">japnis</option>
+             <option value="ch">chinese</option>
+        </select>
+    <br><br>
+    <label>current value in INR</label>
+  
+            
+        <p id="p1"> </p>
+            
+                  
+        </center>
+    </body>
+</html>
